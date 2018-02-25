@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 
-fs.readFileSync(`${__dirname}/.env`, "utf8")
+fs.readFileSync(`${process.env.PWD}/.env`, "utf8")
 	.split("\n")
 	.forEach(row => {
 		const keyval = row.split("=");
