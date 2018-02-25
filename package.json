@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": ".env loader and parser",
   "main": "index.js",
+  "bin": {
+	  "env": "./index.js"
+  },
   "scripts": {
     "test": "mocha env.js --reporter spec"
   },
