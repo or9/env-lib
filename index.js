@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-const fs = require("fs");
-
-fs.readFileSync(`${process.env.PWD}/.env`, "utf8")
-	.split("\n")
+const { readFileSync } = require("fs");
+readFileSync(`${process.env.PWD}/.env`, "utf8")
+	.split(/[\r\n]/gm)
 	.forEach(row => {
 		const keyval = row.split("=");
 		const key = keyval[0];
