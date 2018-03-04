@@ -1,8 +1,3 @@
-require("chai").should();
-const sinon = require("sinon");
-const proxyquire = require("proxyquire");
-var sandbox;
-
 const EXPECTED_ENV = {
 	TEST_KEY: "yes I am a test key",
 	TEST_2: "a",
