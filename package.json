@@ -1,6 +1,6 @@
 {
   "name": "env-lib",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": ".env loader and parser",
   "main": "index.js",
   "bin": {
