@@ -1,3 +1,5 @@
+require("chai").should();
+
 const EXPECTED_ENV = {
 	TEST_KEY: "yes I am a test key",
 	TEST_2: "a",

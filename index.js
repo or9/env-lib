@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const ENV_FILE = process.argv[2] || `${process.env.PWD/.env}`;
+const ENV_FILE = process.argv[2] || `${process.env.PWD}/.env`;
 const { readFileSync } = require("fs");
 
 readFileSync(ENV_FILE, "utf8")
